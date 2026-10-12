@@ -1,0 +1,673 @@
+/* =========================
+   Hero Section
+========================= */
+
+.hero-section {
+  background: #fff8ef;
+  padding: 30px 0;
+  overflow: hidden;
+  position: relative;
+}
+
+
+/* =========================
+   Badge
+========================= */
+
+.hero-badge {
+  display: inline-block;
+  background: #fff4d8;
+  color: #b8860b;
+  padding: 10px 22px;
+  border-radius: 40px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  font-size: 16px;
+  font-family: "Cinzel", serif;
+}
+
+.hero-badge i {
+  color: #d4af37;
+  margin: 0 8px;
+  font-size: 14px;
+}
+
+
+/* =========================
+   Heading
+========================= */
+
+.hero-title {
+  font-size: clamp(30px, 3vw, 47px);
+  font-weight: 600;
+  color: #670606;
+  line-height: 1.15;
+  font-family: "Cormorant Garamond", serif;
+}
+
+.hero-title span {
+  color: #c58a09;
+}
+
+
+/* =========================
+   Divider
+========================= */
+
+.hero-divider {
+  width: 170px;
+  height: 4px;
+  background: #d4af37;
+  border-radius: 50px;
+  margin: 30px 0;
+}
+
+
+/* =========================
+   Text
+========================= */
+
+.hero-text {
+  font-size: 20px;
+  color: #666;
+  line-height: 1.9;
+  max-width: 560px;
+}
+
+
+/* =========================
+   Buttons
+========================= */
+
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.download-btn,
+.watch-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  padding: 16px 34px;
+  border-radius: 50px;
+
+  font-weight: 600;
+  font-size: 17px;
+
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.download-btn {
+  background: #c58a09;
+  color: #fff;
+  border: none;
+
+  box-shadow: 0 12px 25px rgba(197, 138, 9, 0.3);
+}
+
+.download-btn:hover {
+  background: #9b7000;
+  transform: translateY(-4px);
+}
+
+.watch-btn {
+  background: #c58a09;
+  color: #faf8f7;
+  border: 2px solid #c58a09;
+}
+
+.watch-btn:hover {
+  background: #c58a09ac;
+  color: #fff;
+  transform: translateY(-4px);
+}
+
+
+/* =========================
+   Store Buttons
+========================= */
+
+.store-buttons {
+  display: flex;
+  gap: 18px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.store-buttons img {
+  width: 180px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.store-buttons img:hover {
+  transform: translateY(-5px);
+}
+
+
+/* =========================
+   Hero Image Wrapper
+========================= */
+
+.hero-image-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 500px;
+}
+
+
+/* =========================
+   Golden Glow
+========================= */
+
+.hero-image-wrapper::before {
+  content: "";
+  position: absolute;
+
+  width: 100%;
+  max-width: 520px;
+  aspect-ratio: 1 / 1;
+
+  background: radial-gradient(
+    circle,
+    rgba(248, 221, 145, 0.8) 0%,
+    rgba(255, 243, 212, 0.35) 45%,
+    transparent 75%
+  );
+
+  filter: blur(35px);
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  z-index: 0;
+}
+
+
+/* =========================
+   Temple Image
+========================= */
+
+.temple-img {
+  width: 305%;
+  max-width: 900px;
+  height: auto;
+
+  position: relative;
+  z-index: 2;
+
+  animation: heroFloat 5s ease-in-out infinite;
+  transition: 0.4s;
+}
+
+.temple-img:hover {
+  transform: scale(1.03);
+}
+
+
+/* =========================
+   Temple Floating Animation
+========================= */
+
+@keyframes heroFloat {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+/* =========================
+   Diya Icons
+========================= */
+
+.sparkle {
+  position: absolute;
+
+  color: #d4af37;
+
+  font-size: 30px;
+
+  z-index: 4;
+
+  pointer-events: none;
+
+  animation: diyaFloat 4s ease-in-out infinite;
+}
+
+
+/* Top diya */
+
+.sparkle1 {
+  top: 55px;
+  left: 18%;
+}
+
+
+/* Right diya */
+
+.sparkle2 {
+  top: 220px;
+  right: 7%;
+}
+
+
+/* Bottom diya */
+
+.sparkle3 {
+  bottom: 55px;
+  left: 12%;
+}
+
+
+/* =========================
+   Diya Animation
+========================= */
+
+@keyframes diyaFloat {
+  0%,
+  100% {
+    opacity: 0.75;
+    transform: translateY(0);
+  }
+
+  50% {
+    opacity: 1;
+    transform: translateY(-8px);
+  }
+}
+
+
+/* =========================
+   Users Card
+========================= */
+
+.users-card {
+  position: absolute;
+
+  top: 40px;
+  right: -10px;
+
+  background: #fff;
+
+  padding: 16px 20px;
+
+  border-radius: 18px;
+
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+
+  z-index: 3;
+}
+
+.users-card h2 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.users-card p {
+  margin: 0;
+  color: #666;
+}
+
+
+/* =========================
+   Large Laptop
+========================= */
+
+@media (max-width: 1400px) {
+
+  .temple-img {
+    max-width: 500px;
+  }
+
+}
+
+
+/* =========================
+   Laptop
+========================= */
+
+@media (max-width: 1200px) {
+
+  .hero-section {
+    padding: 40px 0;
+  }
+
+  .hero-title {
+    font-size: 50px;
+  }
+
+  .hero-text {
+    font-size: 18px;
+    max-width: 500px;
+  }
+
+  .temple-image {
+    max-width: 520px;
+  }
+
+  .store-buttons img {
+    width: 160px;
+  }
+
+  /* Diya */
+
+  .sparkle {
+    font-size: 28px;
+  }
+
+  .sparkle1 {
+    top: 45px;
+    left: 15%;
+  }
+
+  .sparkle2 {
+    top: 190px;
+    right: 6%;
+  }
+
+  .sparkle3 {
+    bottom: 45px;
+    left: 10%;
+  }
+
+}
+
+
+/* =========================
+   Tablet
+========================= */
+
+@media (max-width: 991px) {
+
+  .hero-section {
+    padding: 40px 0;
+    text-align: center;
+  }
+
+  .hero-section .row {
+    flex-direction: column-reverse;
+    row-gap: 50px;
+  }
+
+  /* Correct class name */
+
+  .hero-image-wrapper {
+    min-height: auto;
+  }
+
+  .temple-img {
+    max-width: 480px;
+  }
+
+  .hero-divider {
+    margin: 25px auto;
+  }
+
+  .hero-text {
+    max-width: 650px;
+    margin: auto;
+    font-size: 18px;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .store-buttons {
+    justify-content: center;
+  }
+
+  .store-buttons img {
+    width: 150px;
+  }
+
+
+  /* Tablet Diya */
+
+  .sparkle {
+    font-size: 26px;
+  }
+
+  .sparkle1 {
+    top: 30px;
+    left: 12%;
+  }
+
+  .sparkle2 {
+    top: 150px;
+    right: 8%;
+  }
+
+  .sparkle3 {
+    bottom: 30px;
+    left: 8%;
+  }
+
+
+  /* Users Card */
+
+  .users-card {
+    position: relative;
+    top: auto;
+    right: auto;
+    margin: 20px auto;
+    display: inline-block;
+  }
+
+}
+
+
+/* =========================
+   Mobile
+========================= */
+
+@media (max-width: 767px) {
+
+  .hero-section {
+    padding: 35px 0;
+  }
+
+  .hero-badge {
+    font-size: 14px;
+    padding: 8px 18px;
+  }
+
+  .hero-title {
+    font-size: 38px;
+    line-height: 1.3;
+  }
+
+  .hero-divider {
+    width: 120px;
+    margin: 20px auto;
+  }
+
+  .hero-text {
+    font-size: 17px;
+    line-height: 1.8;
+    padding: 0 10px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .download-btn,
+  .watch-btn {
+    width: 280px;
+    justify-content: center;
+  }
+
+  .store-buttons {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .store-buttons img {
+    width: 140px;
+  }
+
+  .temple-img {
+    max-width: 360px;
+  }
+
+
+  /* Mobile Diya */
+
+  .sparkle {
+    font-size: 23px;
+  }
+
+  .sparkle1 {
+    top: 20px;
+    left: 7%;
+  }
+
+  .sparkle2 {
+    top: 110px;
+    right: 5%;
+  }
+
+  .sparkle3 {
+    bottom: 20px;
+    left: 6%;
+  }
+
+}
+
+
+/* =========================
+   Small Mobile
+========================= */
+
+@media (max-width: 576px) {
+
+  .hero-section {
+    padding: 30px 0;
+  }
+
+  .hero-title {
+    font-size: 32px;
+  }
+
+  .hero-text {
+    font-size: 16px;
+  }
+
+  .download-btn,
+  .watch-btn {
+    width: 100%;
+    max-width: 300px;
+    padding: 14px 18px;
+    font-size: 16px;
+  }
+
+  .store-buttons img {
+    width: 130px;
+  }
+
+  .temple-img {
+    max-width: 300px;
+  }
+
+
+  /* Small Mobile Diya */
+
+  .sparkle {
+    font-size: 19px;
+  }
+
+  .sparkle1 {
+    top: 15px;
+    left: 5%;
+  }
+
+  .sparkle2 {
+    top: 90px;
+    right: 4%;
+  }
+
+  .sparkle3 {
+    bottom: 15px;
+    left: 5%;
+  }
+
+}
+
+
+/* =========================
+   Extra Small Mobile
+========================= */
+
+@media (max-width: 400px) {
+
+  .hero-title {
+    font-size: 28px;
+  }
+
+  .hero-text {
+    font-size: 15px;
+  }
+
+  .hero-badge {
+    font-size: 12px;
+    padding: 8px 15px;
+  }
+
+  .download-btn,
+  .watch-btn {
+    font-size: 15px;
+  }
+
+  .store-buttons img {
+    width: 115px;
+  }
+
+  .temple-img {
+    max-width: 250px;
+  }
+
+
+  /* Extra Small Mobile Diya */
+
+  .sparkle {
+    font-size: 17px;
+  }
+
+  .sparkle1 {
+    top: 10px;
+    left: 4%;
+  }
+
+  .sparkle2 {
+    top: 75px;
+    right: 3%;
+  }
+
+  .sparkle3 {
+    bottom: 10px;
+    left: 4%;
+  }
+
+}

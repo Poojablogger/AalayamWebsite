@@ -1,0 +1,236 @@
+.gallery-page{
+    background:#FFF8EF;
+}
+
+/* ===========================
+   Hero Banner
+=========================== */
+
+.gallery-banner{
+    position:relative;
+    height:560px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    overflow:hidden;
+    border-bottom-left-radius:70px;
+    border-bottom-right-radius:70px;
+    background:url("../../assets/images/maruthi/maruthi.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+.gallery-banner-overlay{
+    position:absolute;
+    inset:0;
+    background:linear-gradient(rgba(0,0,0,.35),rgba(77,29,22,.65));
+}
+
+.gallery-banner-content{
+    position:relative;
+    z-index:10;
+    text-align:center;
+    max-width:760px;
+    margin:auto;
+}
+
+.gallery-banner-divider{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:18px;
+    margin-bottom:30px;
+}
+
+.gallery-banner-divider span{
+    width:120px;
+    height:2px;
+    background:#D4AF37;
+    border-radius:10px;
+}
+
+.gallery-banner-divider i{
+    color:#D4AF37;
+    font-size:24px;
+}
+
+.gallery-banner-title{
+    color:#fff;
+    font-size:68px;
+    font-weight:700;
+    font-family:Georgia,serif;
+    text-shadow:0 10px 30px rgba(0,0,0,.45);
+}
+
+.gallery-banner-description{
+    color:#f4f4f4;
+    font-size:20px;
+    line-height:1.8;
+    max-width:620px;
+    margin:25px auto;
+}
+
+.gallery-banner-button{
+    background:#D4AF37 !important;
+    color:#fff !important;
+    border:none !important;
+    padding:15px 40px;
+    border-radius:50px;
+    font-size:17px;
+    font-weight:600;
+    transition:.35s;
+}
+
+.gallery-banner-button:hover{
+    background:#B8860B !important;
+    color:#fff !important;
+    transform:translateY(-6px);
+    box-shadow:0 15px 30px rgba(212,175,55,.45);
+}
+
+/* ===========================
+   Heading
+=========================== */
+
+.gallery-heading-section{
+    padding:80px 0 55px;
+}
+
+.gallery-small-divider{
+    margin-bottom:15px;
+}
+
+.gallery-small-divider i{
+    color:#D4AF37;
+    font-size:26px;
+}
+
+.gallery-heading-title{
+    font-size:46px;
+    font-family:Georgia,serif;
+    color:#4D1D16;
+    font-weight:700;
+}
+
+.gallery-heading-text{
+    color:#666;
+    font-size:18px;
+    margin-top:12px;
+}
+
+/* ===========================
+   Cards
+=========================== */
+
+.gallery-card{
+    border:none !important;
+    border-radius:22px;
+    overflow:hidden;
+    cursor:pointer;
+    position:relative;
+    transition:.4s;
+    box-shadow:0 12px 30px rgba(0,0,0,.12);
+}
+
+.gallery-card:hover{
+    transform:translateY(-12px);
+    box-shadow:0 22px 45px rgba(184,134,11,.28);
+}
+
+.gallery-card img{
+    height:360px;
+    width:100%;
+    object-fit:cover;
+    transition:.6s;
+}
+
+.gallery-card:hover img{
+    transform:scale(1.08);
+}
+
+.gallery-card::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    border:2px solid transparent;
+    border-radius:22px;
+    background:linear-gradient(45deg,#D4AF37,transparent,#B8860B) border-box;
+    opacity:0;
+    transition:.4s;
+    pointer-events:none;
+}
+
+.gallery-card:hover::before{
+    opacity:1;
+}
+
+/* Bottom name overlay (always faint, gradient only) */
+.gallery-card .card-img-overlay-bottom{
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    padding:20px 20px 55px;
+    background:linear-gradient(to top, rgba(0,0,0,.75), transparent);
+    pointer-events:none;
+}
+
+.gallery-card h4{
+    color:white;
+    font-size:22px;
+    font-weight:700;
+    margin:0;
+    text-shadow:0 4px 12px rgba(0,0,0,.5);
+}
+
+/* Circular download icon - top right */
+.gallery-download-icon{
+    position:absolute;
+    top:16px;
+    right:16px;
+    width:42px;
+    height:42px;
+    border-radius:50%;
+    background:#fff;
+    border:none;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:16px;
+    color:#4D1D16;
+    box-shadow:0 6px 18px rgba(0,0,0,.25);
+    transition:.3s;
+    z-index:5;
+}
+
+.gallery-download-icon:hover{
+    background:#D4AF37;
+    color:#fff;
+    transform:scale(1.1);
+}
+
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media(max-width:992px){
+.gallery-banner{ height:500px; }
+.gallery-banner-title{ font-size:52px; }
+}
+
+@media(max-width:768px){
+.gallery-banner{
+    height:420px;
+    border-bottom-left-radius:40px;
+    border-bottom-right-radius:40px;
+}
+.gallery-banner-divider span{ width:70px; }
+.gallery-banner-title{ font-size:38px; }
+.gallery-banner-description{ font-size:16px; padding:0 20px; }
+.gallery-heading-title{ font-size:34px; }
+.gallery-card img{ height:300px; }
+.gallery-edit-btn{ padding:7px 16px; font-size:13px; }
+.gallery-icon-btn{ width:36px; height:36px; }
+}

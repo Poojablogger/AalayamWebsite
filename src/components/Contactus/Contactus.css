@@ -1,0 +1,560 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap");
+
+
+/* =========================
+   CONTACT PAGE
+========================= */
+
+.contact-page {
+  position: relative;
+  min-height: calc(100vh - 80px);
+  background: #fff8ef;
+  padding: 80px 0 100px;
+  overflow: hidden;
+}
+
+
+/* =========================
+   BACKGROUND GLOW
+========================= */
+
+.contact-glow {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  filter: blur(70px);
+}
+
+.contact-glow-one {
+  width: 300px;
+  height: 300px;
+  background: rgba(197, 138, 9, 0.12);
+  top: 80px;
+  left: -120px;
+}
+
+.contact-glow-two {
+  width: 350px;
+  height: 350px;
+  background: rgba(122, 45, 25, 0.08);
+  right: -150px;
+  bottom: 50px;
+}
+
+
+/* =========================
+   HEADING
+========================= */
+
+.contact-heading {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 60px;
+}
+
+.contact-badge {
+  display: inline-block;
+
+  padding: 10px 24px;
+
+  border-radius: 50px;
+
+  background: #fff0c9;
+
+  color: #b47700;
+
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  letter-spacing: 2px;
+}
+
+
+.contact-heading h1 {
+  margin-top: 22px;
+
+  margin-bottom: 12px;
+
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: 64px;
+
+  font-weight: 700;
+
+  color: #4a1d1d;
+
+  line-height: 1;
+}
+
+
+.contact-heading h1 span {
+  color: #c58a09;
+}
+
+
+.contact-gold-line {
+  width: 75px;
+
+  height: 4px;
+
+  background: #c58a09;
+
+  border-radius: 10px;
+
+  margin: 20px auto;
+}
+
+
+.contact-heading p {
+  margin: 0;
+
+  color: #6b7280;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 16px;
+
+  line-height: 1.8;
+}
+
+
+/* =========================
+   MAIN CONTENT
+========================= */
+
+.contact-content {
+  position: relative;
+  z-index: 2;
+}
+
+
+/* =========================
+   LEFT INFO
+========================= */
+
+.contact-info {
+  height: 100%;
+
+  padding: 42px 32px;
+
+  border-radius: 24px;
+
+  background: #4a1d1d;
+
+  box-shadow:
+    0 20px 45px rgba(74, 29, 29, 0.18);
+}
+
+
+.contact-info h2 {
+  margin-bottom: 15px;
+
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: 38px;
+
+  color: #fff;
+
+  font-weight: 700;
+}
+
+
+.contact-info > p {
+  color: rgba(255, 255, 255, 0.75);
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 14px;
+
+  line-height: 1.8;
+
+  margin-bottom: 35px;
+}
+
+
+/* =========================
+   INFO ITEMS
+========================= */
+
+.contact-info-item {
+  display: flex;
+
+  align-items: center;
+
+  gap: 16px;
+
+  margin-bottom: 25px;
+}
+
+
+.contact-info-icon {
+  width: 46px;
+  height: 46px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: rgba(197, 138, 9, 0.18);
+
+  color: #e2a91b;
+
+  font-size: 17px;
+}
+
+
+.contact-info-item span {
+  display: block;
+
+  margin-bottom: 3px;
+
+  color: rgba(255, 255, 255, 0.55);
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 12px;
+
+  text-transform: uppercase;
+
+  letter-spacing: 1px;
+}
+
+
+.contact-info-item strong {
+  display: block;
+
+  color: #fff;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 14px;
+
+  font-weight: 500;
+}
+
+
+/* =========================
+   BLESSING BOX
+========================= */
+
+.contact-blessing {
+  margin-top: 35px;
+
+  padding: 20px;
+
+  border-radius: 16px;
+
+  background: rgba(255, 255, 255, 0.07);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  text-align: center;
+}
+
+
+.contact-blessing p {
+  margin: 8px 0 0;
+
+  color: rgba(255, 255, 255, 0.7);
+
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: 18px;
+
+  font-style: italic;
+}
+
+
+/* =========================
+   FORM CARD
+========================= */
+
+.contact-form-card {
+  padding: 42px;
+
+  border-radius: 24px;
+
+  background: #ffffff;
+
+  border: 1px solid rgba(197, 138, 9, 0.15);
+
+  box-shadow:
+    0 20px 50px rgba(74, 29, 29, 0.10);
+}
+
+
+.form-title {
+  margin-bottom: 30px;
+}
+
+
+.form-title h2 {
+  margin-bottom: 5px;
+
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: 34px;
+
+  color: #4a1d1d;
+
+  font-weight: 700;
+}
+
+
+.form-title p {
+  margin: 0;
+
+  color: #8a8a8a;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 13px;
+}
+
+
+/* =========================
+   FORM LABEL
+========================= */
+
+.contact-form-card label {
+  display: block;
+
+  margin-bottom: 8px;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  color: #4a1d1d;
+}
+
+
+.contact-form-card label span {
+  color: #c58a09;
+}
+
+
+/* =========================
+   INPUT
+========================= */
+
+.contact-input {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  height: 52px;
+
+  padding: 0 16px;
+
+  border: 1px solid #eadfce;
+
+  border-radius: 10px;
+
+  background: #fffaf3;
+
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+
+.contact-input svg {
+  flex-shrink: 0;
+
+  color: #c58a09;
+
+  font-size: 14px;
+}
+
+
+.contact-input input {
+  width: 100%;
+
+  height: 100%;
+
+  border: none;
+
+  outline: none;
+
+  background: transparent;
+
+  color: #4a1d1d;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 13px;
+}
+
+
+.contact-input input::placeholder,
+.contact-form-card textarea::placeholder {
+  color: #a7a09a;
+}
+
+
+.contact-input:focus-within {
+  border-color: #c58a09;
+
+  box-shadow: 0 0 0 3px rgba(197, 138, 9, 0.10);
+}
+
+
+/* =========================
+   TEXTAREA
+========================= */
+
+.contact-form-card textarea {
+  width: 100%;
+
+  padding: 15px 16px;
+
+  resize: vertical;
+
+  min-height: 140px;
+
+  border: 1px solid #eadfce;
+
+  border-radius: 10px;
+
+  outline: none;
+
+  background: #fffaf3;
+
+  color: #4a1d1d;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 13px;
+
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+
+.contact-form-card textarea:focus {
+  border-color: #c58a09;
+
+  box-shadow: 0 0 0 3px rgba(197, 138, 9, 0.10);
+}
+
+
+/* =========================
+   SUBMIT BUTTON
+========================= */
+
+.contact-submit-btn {
+  width: 100%;
+
+  height: 54px;
+
+  border: none;
+
+  border-radius: 30px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 10px;
+
+  background: #c58a09;
+
+  color: #fff;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 12px 25px rgba(197, 138, 9, 0.25);
+
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+
+.contact-submit-btn:hover {
+  background: #a96f00;
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 16px 30px rgba(197, 138, 9, 0.30);
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 991px) {
+
+  .contact-page {
+    padding: 60px 0 80px;
+  }
+
+  .contact-heading h1 {
+    font-size: 52px;
+  }
+
+  .contact-info {
+    padding: 35px 28px;
+  }
+
+}
+
+
+@media (max-width: 767px) {
+
+  .contact-page {
+    padding: 45px 0 60px;
+  }
+
+  .contact-heading {
+    margin-bottom: 40px;
+  }
+
+  .contact-heading h1 {
+    font-size: 44px;
+  }
+
+  .contact-heading p br {
+    display: none;
+  }
+
+  .contact-form-card {
+    padding: 25px 20px;
+  }
+
+  .contact-info {
+    padding: 30px 22px;
+  }
+
+  .form-title h2 {
+    font-size: 30px;
+  }
+
+}

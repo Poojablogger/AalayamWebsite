@@ -1,0 +1,299 @@
+.footer {
+  background: linear-gradient(135deg, #3E2723, #5D4037);
+  color: #fff;
+  padding: 45px 25px 15px;
+}
+
+.footer-container {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1.8fr 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+/* =========================
+   Logo
+========================= */
+
+.logo {
+  width: 82px;
+  border-radius: 50%;
+}
+
+.footer h2,
+.footer h3 {
+  color: #FFD54F;
+  font-size: 28px;
+  margin: 14px 0;
+}
+
+.footer-left p {
+  line-height: 1.7;
+  max-width: 420px;
+  font-size: 15px;
+}
+
+/* =========================
+   Download Buttons
+========================= */
+
+.download-section {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.store-btn {
+  width: 145px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.store-btn:hover {
+  transform: scale(1.05);
+}
+
+/* =========================
+   Quick Links
+========================= */
+
+.footer-center ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.footer-center li {
+  margin-bottom: 13px;
+  font-size: 15px;
+}
+
+.footer-center a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-center a:hover {
+  color: #FFD54F;
+}
+
+/* =========================
+   Right Section
+========================= */
+
+.footer-right {
+  text-align: left;
+}
+
+.lamp {
+  width: 140px;
+  margin-bottom: 10px;
+}
+
+.footer-right p {
+  margin: 13px 0;
+  font-size: 15px;
+}
+
+/* =========================
+   Social Icons
+========================= */
+
+.social-icons {
+  display: flex;
+  gap: 16px;
+  margin-top: 18px;
+}
+
+.social-icons a {
+  display: inline-block;
+}
+
+.social-icons img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.social-icons img:hover {
+  transform: scale(1.15);
+}
+
+/* =========================
+   Copyright
+========================= */
+
+.footer hr {
+  margin-top: 30px;
+  border: none;
+  height: 1px;
+  background: #8d6e63;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 15px;
+  color: #F5F5DC;
+  font-size: 13px;
+}
+
+
+/* ===========================
+   Tablet
+=========================== */
+
+@media (max-width: 992px) {
+
+  .footer {
+    padding: 40px 25px 15px;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .footer-left,
+  .footer-center,
+  .footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-left p {
+    max-width: 600px;
+  }
+
+  .download-section {
+    justify-content: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+  .footer-right {
+    text-align: center;
+  }
+
+  .lamp {
+    width: 125px;
+  }
+}
+
+
+/* ===========================
+   Mobile
+=========================== */
+
+@media (max-width: 768px) {
+
+  .footer {
+    padding: 35px 20px 15px;
+  }
+
+  .footer-container {
+    gap: 28px;
+  }
+
+  .logo {
+    width: 75px;
+  }
+
+  .footer h2 {
+    font-size: 26px;
+  }
+
+  .footer h3 {
+    font-size: 23px;
+  }
+
+  .footer-left p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .store-btn {
+    width: 140px;
+  }
+
+  .lamp {
+    width: 115px;
+  }
+
+  .social-icons {
+    gap: 15px;
+  }
+
+  .social-icons img {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+
+/* ===========================
+   Small Mobile
+=========================== */
+
+@media (max-width: 480px) {
+
+  .footer {
+    padding: 30px 15px 12px;
+  }
+
+  .logo {
+    width: 68px;
+  }
+
+  .footer h2 {
+    font-size: 24px;
+  }
+
+  .footer h3 {
+    font-size: 21px;
+  }
+
+  .footer-left p {
+    font-size: 13px;
+  }
+
+  .download-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .store-btn {
+    width: 140px;
+  }
+
+  .lamp {
+    width: 100px;
+  }
+
+  .social-icons {
+    gap: 14px;
+  }
+
+  .social-icons img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .footer-center li {
+    margin-bottom: 12px;
+  }
+
+  .copyright {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+}

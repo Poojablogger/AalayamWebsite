@@ -1,0 +1,149 @@
+.muruga-page{
+    background:#FFF8EF;
+    min-height:100vh;
+}
+
+.muruga-back-btn{
+    display:inline-flex;
+    align-items:center;
+    color:#4D1D16;
+    font-size:17px;
+    font-weight:600;
+    transition:.3s;
+    margin-bottom:30px;
+}
+
+.muruga-back-btn:hover{
+    color:#B8860B;
+}
+
+.muruga-title{
+    font-size:52px;
+    font-weight:700;
+    color:#4D1D16;
+    font-family:Georgia, serif;
+}
+
+.muruga-subtitle{
+    color:#666;
+    font-size:18px;
+    margin-top:12px;
+}
+
+.muruga-card{
+    border-radius:20px;
+    overflow:hidden;
+    position:relative;
+    cursor:pointer;
+    transition:.4s;
+    box-shadow:0 12px 28px rgba(0,0,0,.15);
+}
+
+.muruga-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(184,134,11,.25);
+}
+
+.muruga-card img{
+    height:360px;
+    width:100%;
+    object-fit:cover;
+    transition:.5s;
+}
+
+.muruga-card:hover img{
+    transform:scale(1.08);
+}
+
+.muruga-overlay{
+    position:absolute;
+    inset:0;
+    background:linear-gradient(to top,
+    rgba(0,0,0,.75),
+    transparent);
+    display:flex;
+    justify-content:flex-end;
+    align-items:flex-end;
+    padding:18px;
+    opacity:0;
+    transition:.35s;
+}
+
+.muruga-card:hover .muruga-overlay{
+    opacity:1;
+}
+
+.muruga-download-btn{
+    width:46px;
+    height:46px;
+    border-radius:50%;
+    background:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#4D1D16;
+    text-decoration:none;
+    transition:.3s;
+    box-shadow:0 8px 18px rgba(0,0,0,.25);
+}
+
+.muruga-download-btn:hover{
+    background:#D4AF37;
+    color:#fff;
+    transform:scale(1.1);
+}
+
+/* Selected Image */
+
+.muruga-page .img-fluid{
+    max-width:100%;
+    border-radius:20px;
+    box-shadow:0 12px 30px rgba(0,0,0,.18);
+}
+
+.btn-warning{
+    background:#D4AF37;
+    border:none;
+    color:#fff;
+    font-weight:600;
+}
+
+.btn-warning:hover{
+    background:#B8860B;
+    color:#fff;
+}
+
+/* Responsive */
+
+@media(max-width:992px){
+
+.muruga-title{
+    font-size:42px;
+}
+
+.muruga-card img{
+    height:320px;
+}
+
+}
+
+@media(max-width:768px){
+
+.muruga-title{
+    font-size:34px;
+}
+
+.muruga-subtitle{
+    font-size:16px;
+}
+
+.muruga-card img{
+    height:280px;
+}
+
+.muruga-download-btn{
+    width:40px;
+    height:40px;
+}
+
+}

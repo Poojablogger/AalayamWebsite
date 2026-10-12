@@ -1,0 +1,156 @@
+/* ===========================
+   Ganesha Page
+=========================== */
+
+.ganesha-page{
+    background:#FFF8EF;
+    min-height:100vh;
+}
+
+/* ===========================
+   Back Button
+=========================== */
+
+.ganesha-back-btn{
+    display:inline-flex;
+    align-items:center;
+    color:#4D1D16;
+    font-size:17px;
+    font-weight:600;
+    transition:.3s;
+    margin-bottom:40px;
+}
+
+.ganesha-back-btn:hover{
+    color:#B8860B;
+}
+
+/* ===========================
+   Heading
+=========================== */
+
+.ganesha-title{
+    font-size:52px;
+    font-weight:700;
+    color:#4D1D16;
+    font-family:Georgia, serif;
+    margin-bottom:15px;
+}
+
+.ganesha-subtitle{
+    font-size:18px;
+    color:#666;
+}
+
+/* ===========================
+   Wallpaper Card
+=========================== */
+
+.ganesha-card{
+    position:relative;
+    overflow:hidden;
+    border-radius:22px;
+    cursor:pointer;
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+    transition:.4s;
+}
+
+.ganesha-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(184,134,11,.30);
+}
+
+.ganesha-card img{
+    width:100%;
+    height:380px;
+    object-fit:cover;
+    transition:.5s;
+}
+
+.ganesha-card:hover img{
+    transform:scale(1.08);
+}
+
+/* ===========================
+   Overlay
+=========================== */
+
+.ganesha-overlay{
+    position:absolute;
+    inset:0;
+    display:flex;
+    justify-content:flex-end;
+    align-items:flex-end;
+    padding:20px;
+    background:linear-gradient(
+        to top,
+        rgba(0,0,0,.65),
+        transparent
+    );
+    opacity:0;
+    transition:.35s;
+}
+
+.ganesha-card:hover .ganesha-overlay{
+    opacity:1;
+}
+
+/* ===========================
+   Download Button
+=========================== */
+
+.ganesha-download-btn{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    background:#fff;
+    color:#4D1D16;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    transition:.3s;
+    box-shadow:0 8px 20px rgba(0,0,0,.25);
+}
+
+.ganesha-download-btn:hover{
+    background:#D4AF37;
+    color:#fff;
+    transform:scale(1.1);
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media(max-width:992px){
+
+    .ganesha-title{
+        font-size:42px;
+    }
+
+    .ganesha-card img{
+        height:340px;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .ganesha-title{
+        font-size:34px;
+    }
+
+    .ganesha-subtitle{
+        font-size:16px;
+    }
+
+    .ganesha-card img{
+        height:300px;
+    }
+
+    .ganesha-back-btn{
+        font-size:15px;
+    }
+
+}

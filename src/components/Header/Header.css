@@ -1,0 +1,330 @@
+/* ===== Header ===== */
+.header {
+  background: #ffffff;
+  box-shadow: 0 2px 16px rgba(122, 31, 43, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  border-bottom: 1px solid rgba(122, 31, 43, 0.06);
+}
+
+.navbar {
+  padding: 14px 0;
+}
+
+.navbar .container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.navbar-brand {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+/* ===== Logo ===== */
+.navbar-brand {
+  text-decoration: none;
+}
+
+.header-logo {
+  height: 48px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+  margin-left: 0;
+}
+
+.logo-title {
+  font-family: "Georgia", "Merriweather", serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: #7a1f2b;
+  margin: 0;
+  line-height: 1.1;
+  letter-spacing: 0.3px;
+  text-align: left;
+}
+
+.logo-subtitle {
+  font-size: 0.75rem;
+  color: #b8862f;
+  margin: 0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: left;
+}
+
+/* ===== Nav Links ===== */
+.navbar-nav {
+  gap: 34px;
+}
+
+.nav-link {
+  position: relative;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #3b2a2a;
+  padding: 6px 2px !important;
+  transition: color 0.25s ease;
+  white-space: nowrap;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #c9a227, #e6c65c);
+  border-radius: 2px;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #b8862f;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.nav-link.active {
+  color: #c9a227;
+  font-weight: 600;
+}
+
+.nav-link.active::after {
+  width: 100%;
+}
+
+/* ===== Header Right Actions (Download / Language / Login) ===== */
+.header-right-actions {
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  row-gap: 10px;
+  column-gap: 12px;
+}
+
+.header-right-actions .download-btn {
+  margin-left: 0;
+}
+
+/* ===== Download Button ===== */
+.download-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(135deg, #d9a534, #c9922a);
+  color: #fff;
+  border: none;
+  padding: 10px 26px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.3px;
+  cursor: pointer;
+  box-shadow: 0 6px 16px rgba(201, 146, 42, 0.35);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+  margin-left: 24px;
+  text-decoration: none;
+}
+
+.download-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(201, 146, 42, 0.45);
+  background: linear-gradient(135deg, #745208, #5d4107);
+}
+
+.download-btn:active {
+  transform: translateY(0);
+}
+
+/* ===== Mobile Toggle ===== */
+.navbar-toggler {
+  border: 1px solid rgba(122, 31, 43, 0.2);
+  padding: 6px 10px;
+}
+
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 3px rgba(201, 146, 42, 0.25);
+}
+
+/* ===== Responsive ===== */
+
+@media (max-width: 1199px) {
+
+  .navbar-nav {
+    gap: 14px;
+    padding: 16px 0;
+  }
+
+  .download-btn {
+    margin: 12px 0 0 0;
+    width: fit-content;
+  }
+
+  .login-btn {
+    margin: 12px 0 0 0;
+    width: fit-content;
+  }
+
+  .logo-title {
+    font-size: 1.35rem;
+  }
+
+  .navbar .nav-link.bg-transparent {
+    cursor: pointer;
+    outline: none;
+  }
+
+  .navbar .nav-link.bg-transparent:focus {
+    box-shadow: none;
+  }
+}
+
+
+/* ===== Desktop Logo Left Edge ===== */
+
+@media (min-width: 1200px) {
+
+  .navbar .container {
+    max-width: 100%;
+    width: 100%;
+    padding-left: 0 !important;
+    padding-right: 20px !important;
+  }
+
+  .navbar-brand {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+  }
+
+  .header-logo {
+    margin-left: 0 !important;
+  }
+
+  .logo-title,
+  .logo-subtitle {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+    text-align: left;
+  }
+}
+/* ===== Language Button ===== */
+
+.language-wrapper {
+  position: relative;
+}
+
+.language-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+
+  background: #ffffff;
+  color: #7a1f2b;
+
+  border: 1px solid #d9a534;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  padding: 0;
+
+  cursor: pointer;
+  transition: 0.3s ease;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.language-btn-chevron {
+  margin-left: -2px;
+}
+
+.language-btn:hover {
+  background: #d9a534;
+  color: #ffffff;
+  border-color: #d9a534;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(217, 165, 52, 0.35);
+}
+
+/* ===== Login Button ===== */
+
+.login-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+
+  background: #7a1f2b;
+  color: #ffffff;
+
+  border: 1px solid #7a1f2b;
+  padding: 10px 20px;
+  border-radius: 30px;
+
+  font-size: 0.95rem;
+  font-weight: 600;
+
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.login-btn:hover {
+  background: #5d1620;
+  border-color: #5d1620;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(93, 22, 32, 0.35);
+}
+
+
+/* ===== Language Dropdown ===== */
+
+.language-menu {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+
+  width: 160px;
+
+  background: #ffffff;
+  border-radius: 12px;
+
+  padding: 8px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+
+  z-index: 1000;
+}
+
+.language-menu button {
+  display: block;
+
+  width: 100%;
+
+  border: none;
+  background: transparent;
+
+  padding: 10px 12px;
+
+  text-align: left;
+
+  color: #4a2929;
+
+  font-size: 15px;
+  font-weight: 500;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+}
+
+.language-menu button:hover {
+  background: #fff4d8;
+  color: #b8862f;
+}

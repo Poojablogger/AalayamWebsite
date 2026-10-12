@@ -1,0 +1,150 @@
+/* ==========================================
+   Stats Section
+========================================== */
+
+.stats-page-section{
+    background:#faf7f2;
+    padding:30px 20px 80px;
+}
+
+/* ==========================================
+   Container
+========================================== */
+
+.stats-page-container{
+
+   max-width:1250px;
+    margin:70px auto 0;
+
+    background:linear-gradient(135deg,#4a130f,#2a0907);
+
+    border-radius:28px;
+
+    padding:35px 30px;
+
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.18);
+
+}
+
+/* ==========================================
+   Item
+========================================== */
+
+.stats-page-item{
+
+    display:flex;
+    align-items:center;
+    gap:18px;
+
+    color:#fff;
+
+    transition:.35s ease;
+
+}
+
+.stats-page-item:hover{
+
+    transform:translateY(-6px);
+
+}
+
+/* ==========================================
+   Icon
+========================================== */
+
+.stats-page-icon{
+
+    width:72px;
+    height:72px;
+
+    border-radius:50%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    flex-shrink:0;
+
+    background:linear-gradient(135deg,#D4AF37,#F4C430);
+
+    color:#fff;
+
+    font-size:30px;
+
+    box-shadow:0 10px 25px rgba(212,175,55,.35);
+
+    transition:.4s;
+
+}
+
+.stats-page-item:hover .stats-page-icon{
+
+    transform:rotate(12deg) scale(1.12);
+
+}
+
+/* ==========================================
+   Text
+========================================== */
+
+.stats-page-item h2{
+
+    margin:0;
+
+    font-size:42px;
+
+    color:#FFD56A;
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-weight:700;
+
+}
+
+.stats-page-item p{
+
+    margin:6px 0 0;
+
+    color:#f6f6f6;
+
+    font-size:17px;
+
+    font-family:"Poppins",sans-serif;
+
+}
+
+/* ==========================================
+   Responsive
+========================================== */
+
+@media(max-width:992px){
+
+.stats-page-container{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:576px){
+
+.stats-page-container{
+
+    grid-template-columns:1fr;
+
+}
+
+.stats-page-item{
+
+    justify-content:center;
+    text-align:left;
+
+}
+
+}

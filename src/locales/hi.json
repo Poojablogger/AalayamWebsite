@@ -1,0 +1,12 @@
+{
+  "nav": {
+    "home": "Home",
+    "features": "Features",
+    "gallery": "Gallery",
+    "about": "About",
+    "testimonials": "Testimonials",
+    "contact": "Contact Us",
+    "download": "Download",
+    "language": "Language"
+  }
+}
