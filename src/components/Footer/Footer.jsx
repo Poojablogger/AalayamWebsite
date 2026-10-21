@@ -24,7 +24,7 @@ function Footer() {
       script.onload = () => {
         if (window.CloneIT) {
           window.CloneIT.init({
-            agentId: "b51db77e-9ee9-4015-aa23-99b2adef44f7",
+            agentId: "8ad140bf-5cf0-4998-87c7-e0c51d3c3794",
           });
         }
       };
